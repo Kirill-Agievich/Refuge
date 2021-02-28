@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=71 format=2]
 
 [ext_resource path="res://scenes/s_main/default_env.tres" type="Environment" id=1]
 [ext_resource path="res://scenes/s_main/s_main.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://калонки.tscn" type="PackedScene" id=10]
 [ext_resource path="res://робот.tscn" type="PackedScene" id=11]
 [ext_resource path="res://плита.png" type="Texture" id=12]
+[ext_resource path="res://лавка.tscn" type="PackedScene" id=13]
 
 [sub_resource type="CubeMesh" id=1]
 size = Vector3( 1, 1, 1 )
@@ -1854,3 +1855,9 @@ __meta__ = {
 }
 
 [node name="MeshInstance2" type="MeshInstance" parent="."]
+
+[node name="лавка" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1.14525, 0, 0, 0, 0.989231, 0, 0, 0, 1.32327, 11.8206, 1.62235, 29.4854 )
+
+[node name="лавка2" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1.13286, 0, 0.19413, 0, 0.989231, 0, -0.168013, 0, 1.30895, 11.8206, 1.62235, 44.9102 )
